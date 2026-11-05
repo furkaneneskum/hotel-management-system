@@ -1,0 +1,14 @@
+# Bağımlılıklar (npm install ile yeniden kurulur)
+node_modules/
+
+# Derleme çıktısı
+dist/
+
+# Yerel yedekler: gerçek veritabanı kopyası içerir, paylaşılmamalı
+yedek/
+
+# Sistem ve editör dosyaları
+Thumbs.db
+desktop.ini
+.DS_Store
+*.log

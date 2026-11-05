@@ -1,0 +1,41 @@
+{
+  "name": "atalife-guest-house",
+  "productName": "ATA LIFE Guest House",
+  "version": "1.0.0",
+  "description": "ATA LIFE Guest House yerel otel yönetim uygulaması",
+  "main": "electron/main.js",
+  "author": "ATA LIFE Guest House",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.atalife.guesthouse",
+    "productName": "ATA LIFE Guest House",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "index.html",
+      "style.css",
+      "script.js",
+      "assets/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "signAndEditExecutable": false
+    },
+    "portable": {
+      "artifactName": "ATA-LIFE-Guest-House.exe"
+    }
+  }
+}
